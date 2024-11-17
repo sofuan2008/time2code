@@ -4,14 +4,16 @@
 # Subprograms
 # -------------------------
 def interest_rate (money, interest, target_money):
-  target = False
-  year = 0 
+  target = 0
+  year = 1
   money = money
-  target_money = target_money
+  interest_rate= interest/100
   interest_money = 0
-  while target == False:
-    interest_money = (money * (interest_rate/100))+money
-    print (interest_money)
+
+  while interest_money !< target_money:
+    interest_money = (interest_money * interest_rate)+interest_money
+    year = year+1
+    print ("Year",year,"Balance = £",interest_money)
 
 
 # -------------------------
